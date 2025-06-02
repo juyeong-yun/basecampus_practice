@@ -32,9 +32,8 @@ GEMINI_API_KEY = "your-gemini-api-key"
 ```
 
 > **중요:**
-> - **로컬 개발**: 각 앱의 `.streamlit/secrets.toml` 파일을 직접 작성해야 합니다.
-> - **Streamlit Cloud 배포**: `.streamlit/secrets.toml` 파일을 업로드하지 않고, Streamlit Cloud의 **Secrets** 탭에서 위 내용을 등록해야 합니다.
-> - `brainstorm/app.py`는 `st.secrets["GOOGLE_API_KEY"]`를 사용할 수도 있으니, 필요시 `GOOGLE_API_KEY`도 추가하세요.
+> - **로컬 개발**: 각 앱의 `.streamlit/secrets.toml` 파일을 직접 작성해야 하며, 반드시 `GEMINI_API_KEY`라는 이름으로 등록해야 합니다.
+> - **Streamlit Cloud 배포**: `.streamlit/secrets.toml` 파일을 업로드하지 않고, Streamlit Cloud의 **Secrets** 탭에서 위 내용을 반드시 `GEMINI_API_KEY`라는 이름으로 등록해야 합니다.
 
 ## 디렉토리 구조 예시
 
@@ -71,18 +70,19 @@ streamlit run app.py
 ### brainstorm/
 - **app.py**: AI가 주제에 맞는 창의적 아이디어를 생성하고, 좋아요/제거/재생성 등 브레인스토밍 보드 기능을 제공하는 Streamlit 앱입니다.
 - **requirements.txt**: 해당 앱 실행에 필요한 패키지 목록입니다.
-- **.streamlit/secrets.toml**: Gemini API 키를 안전하게 저장하는 파일입니다.
+- **.streamlit/secrets.toml**: Gemini API 키(`GEMINI_API_KEY`)를 안전하게 저장하는 파일입니다.
 
 ### gemini_chatbot/
 - **app.py**: Google Gemini API를 활용한 대화형 챗봇 Streamlit 앱입니다. 사용자의 입력에 대해 Gemini가 답변합니다.
 - **requirements.txt**: 해당 앱 실행에 필요한 패키지 목록입니다.
-- **.streamlit/secrets.toml**: Gemini API 키를 안전하게 저장하는 파일입니다.
+- **.streamlit/secrets.toml**: Gemini API 키(`GEMINI_API_KEY`)를 안전하게 저장하는 파일입니다.
 
 ### magicbook/
 - **app.py**: **매직북: 당신의 결정장애를 해결해 줄 마법 같은 챗봇**
+
   **매직북**은 복잡한 고민 속에서 길을 잃은 당신을 위한 특별한 챗봇 서비스입니다. 무엇을 선택해야 할지, 어떤 방향으로 나아가야 할지 막막할 때, 매직북이 당신의 내면에 숨겨진 진짜 마음을 찾아주고 명쾌한 해결책을 제시해 드립니다.
 - **requirements.txt**: 해당 앱 실행에 필요한 패키지 목록입니다.
-- **.streamlit/secrets.toml**: Gemini API 키를 안전하게 저장하는 파일입니다.
+- **.streamlit/secrets.toml**: Gemini API 키(`GEMINI_API_KEY`)를 안전하게 저장하는 파일입니다.
 
 ---
 

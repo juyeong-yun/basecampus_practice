@@ -13,7 +13,7 @@ class Idea:
 
 # Gemini 모델 설정
 def setup_gemini():
-    genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
+    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
     return genai.GenerativeModel('gemini-1.0-pro')
 
 # 새로운 아이디어 생성

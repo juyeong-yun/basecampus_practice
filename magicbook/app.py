@@ -94,9 +94,9 @@ st.markdown("<p class='subheader'>결정하기 어려운 순간, 매직북과 �
 
 # Gemini API 설정
 try:
-    genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
+    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 except KeyError:
-    st.error("🚨 Google API 키가 설정되지 않았습니다. `.streamlit/secrets.toml` 파일에 API 키를 설정해주세요.")
+    st.error("🚨 Gemini API 키가 설정되지 않았습니다. `.streamlit/secrets.toml` 파일에 API 키를 설정해주세요.")
     st.stop()
 
 # Gemini 모델 초기화
