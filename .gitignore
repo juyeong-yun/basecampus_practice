@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# Streamlit secrets (절대 공개하지 마세요!)
+.streamlit/secrets.toml
+brainstorm/.streamlit/secrets.toml
+gemini_chatbot/.streamlit/secrets.toml
+magicbook/.streamlit/secrets.toml
+
+# Jupyter/IPython
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# VS Code 설정
+.vscode/
+
+# 기타 캐시 및 임시파일
+*.log
+*.sqlite3
+*.db
+*.bak
+*.swp
+
+# OS/에디터 임시파일
+*~
+Thumbs.db
+Desktop.ini
+
+# 테스트/커버리지
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+.cache/
+pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# pyright
+.pyright/
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# 기타
+.env 
